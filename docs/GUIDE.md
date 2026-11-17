@@ -6,7 +6,7 @@ This guide goes with the `rv32i_pipeline` project. It covers three things:
 2. How to put it on a Digilent Nexys4 (Artix-7 XC7A100T) with AMD Vivado.
 3. How to take the same core through an RTL-to-GDSII flow, once with open-source tools (LibreLane/OpenROAD on SkyWater 130 nm) and once each with the Cadence and Synopsys tools available through the C2S programme.
 
-Status: the RTL and software are verified in simulation. The core passes all 40 applicable tests of the official `rv32ui` suite from riscv-tests, and the full board top runs the demo program in simulation. The Vivado project builds and simulates the board top in xsim. The Cadence, Synopsys and LibreLane scripts have not been run end to end yet, so expect to fix a path or a library cell name on a first run. The places where that is likely are called out below.
+Status: the RTL and software are verified in simulation. The core passes all 40 applicable tests of the official `rv32ui` suite from riscv-tests, and the full board top runs the demo program in simulation. The Vivado build runs on the Nexys4 board, with the demo working on the board's buttons and display. The Cadence, Synopsys and LibreLane scripts have not been run end to end yet, so expect to fix a path or a library cell name on a first run. The places where that is likely are called out below.
 
 ---
 

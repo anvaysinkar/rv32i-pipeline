@@ -42,7 +42,9 @@ cd fpga && vivado -mode batch -source build.tcl        # Nexys4
 cd fpga && vivado -mode batch -source build.tcl -tclargs nexys4_ddr   # Nexys4 DDR / A7-100T
 ```
 
-`fpga/create_project.tcl` builds a Vivado GUI project instead. The demo shows a counter on the 7-segment display and the CPI when you hold BTND. Pinouts and what to expect on the board are in the [guide](docs/GUIDE.md#4-fpga-implementation-on-the-nexys4).
+**Runs on the board.** The core has been demonstrated on a Nexys4 with the C demo: a hex counter on the 7-segment display, BTNU to run it 4x faster, BTNC to clear it, and BTND to show the measured CPI.
+
+`fpga/create_project.tcl` builds a Vivado GUI project instead. Pinouts and what to expect on the board are in the [guide](docs/GUIDE.md#4-fpga-implementation-on-the-nexys4).
 
 ## ASIC flow
 
