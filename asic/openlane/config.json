@@ -1,0 +1,19 @@
+{
+    "DESIGN_NAME": "rv32_core",
+    "VERILOG_FILES": [
+        "dir::../../rtl/rv32_alu.v",
+        "dir::../../rtl/rv32_regfile.v",
+        "dir::../../rtl/rv32_decoder.v",
+        "dir::../../rtl/rv32_core.v"
+    ],
+    "VERILOG_INCLUDE_DIRS": [
+        "dir::../../rtl"
+    ],
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 20.0,
+    "PNR_SDC_FILE": "dir::../constraints/rv32_core.sdc",
+    "SIGNOFF_SDC_FILE": "dir::../constraints/rv32_core.sdc",
+    "FP_CORE_UTIL": 40,
+    "PL_TARGET_DENSITY_PCT": 50,
+    "MAX_FANOUT_CONSTRAINT": 16
+}
